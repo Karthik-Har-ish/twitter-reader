@@ -22,7 +22,7 @@ h1{
     margin: 30px;
     width: 300vw;
     z-index: 1;
-    transform: rotate(-50deg);
+    transform: rotate(-45deg);
     left: -135vw;    
     height: 30px;
     position: absolute;
@@ -80,17 +80,15 @@ h1{
 
 @keyframes rectangle-slide {
     from{
-        transform: translateY(295vh) rotate(-50deg);
+        transform: translateY(295vh) rotate(-45deg);
     }
     60%{
-        transform: translateY(-90vh) rotate(-50deg);
+        transform: translateY(-90vh) rotate(-45deg);
     }
     to{
-        transform: translateY(0%) rotate(-50deg);
+        transform: translateY(0%) rotate(-45deg);
     }
 }
-
-
 
 @keyframes slide-main-header-down {
     from{
@@ -108,4 +106,40 @@ h1{
     to{
         height: 110px;
     }
+}
+
+.page{
+    font-family: inherit;
+}
+.tweet{
+    font-family: "Inika",serif;
+    font-size: 36px;
+    font-weight: bold;
+    transform: translate(80px,100px);
+    text-align: center;
+    display: flex;
+    width: 60%;
+    height: 40%;
+}
+.account-handle{
+    font-size: 36px;
+    display: flex;
+    transform: translate(45%,300px);
+}
+.reply{
+    width: 30%;
+    display: flex;
+    height: 40%;
+    font-size: 20px;
+    position: relative;
+    left: 100%;
+    transform: translate(-110%,-40%);
+    flex-direction: column;
+}
+.reply-1{
+    margin-bottom: 60px;
+}
+.reply-handle{
+    position: relative;
+    top: 40px;
 }
