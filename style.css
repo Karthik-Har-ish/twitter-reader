@@ -1,5 +1,5 @@
 body{
-    font-family: "Inika",serif;
+    font-family: "Inter",serif;
     margin: 0px;
     background-color: #3f3f3f;
     overflow: hidden;
@@ -10,6 +10,7 @@ body{
 }
 h1{
     margin: 0px;
+    font-weight: 200;
 }
 .root{
     width: 100vw;
@@ -112,9 +113,9 @@ h1{
     font-family: inherit;
 }
 .tweet{
-    font-family: "Inika",serif;
+    font-family: "Inter",serif;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: 200;
     transform: translate(80px,100px);
     text-align: center;
     display: flex;
@@ -124,12 +125,14 @@ h1{
 .account-handle{
     font-size: 36px;
     display: flex;
+    font-weight: 100;
     transform: translate(45%,300px);
 }
 .reply{
     width: 30%;
     display: flex;
     height: 40%;
+    font-weight: 100;
     font-size: 20px;
     position: relative;
     left: 100%;
@@ -142,4 +145,5 @@ h1{
 .reply-handle{
     position: relative;
     top: 40px;
+    font-weight: 100;
 }
