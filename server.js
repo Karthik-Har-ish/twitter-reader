@@ -1,13 +1,15 @@
 const express = require("express")
 const fs = require("fs")
 
+console.log(__dirname)
+
 let website = fs.readFileSync("index.html","utf-8")
 
 const app = express();
 
 
 
-app.use(express.static("/Karthik/twitter-reader"))
+app.use(express.static(__dirname))
 
 app.get("/",(req,res)=>{
     res.send(website)

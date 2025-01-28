@@ -7,9 +7,6 @@ const logoEl = document.getElementById("logo-el");
 const mainHeaderEl = document.getElementById("main-header");
 let isHeader;
 
-
-
-
 root.onmousedown=(e)=>{
     e.clientY;
     mouseInitPos = e.clientY;
@@ -26,6 +23,7 @@ root.onmousedown=(e)=>{
     })
     root.style.backgroundColor = "#3f3f3f";
 }
+
 root.onmouseup = (e)=>{
     e.clientY
     if(isHeader==="false"){
@@ -46,6 +44,4 @@ root.onmouseup = (e)=>{
             
         }
     }
-    
-
 }
