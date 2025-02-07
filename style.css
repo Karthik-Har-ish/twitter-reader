@@ -65,12 +65,10 @@ h1{
 @keyframes slide-in{
     0%{
         transform: translateY(100%);
-        
         opacity: 0;
     }
     55%{
         transform: translateY(100%);
-        
         opacity: 0;
     }
     to{
@@ -111,6 +109,7 @@ h1{
 
 .page{
     font-family: inherit;
+    height: 100vh;
 }
 .tweet{
     font-family: "Inter",serif;
@@ -126,7 +125,7 @@ h1{
     font-size: 36px;
     display: flex;
     font-weight: 100;
-    transform: translate(45%,300px);
+    margin-left: 50%;
 }
 .reply{
     width: 30%;
@@ -134,9 +133,7 @@ h1{
     height: 40%;
     font-weight: 100;
     font-size: 20px;
-    position: relative;
-    left: 100%;
-    transform: translate(-110%,-40%);
+    margin-left: 65%;
     flex-direction: column;
 }
 .reply-1{
@@ -146,4 +143,12 @@ h1{
     position: relative;
     top: 40px;
     font-weight: 100;
+}
+@keyframes page-scroll-up {
+    from{
+        transform: translateY(0%);
+    }
+    to{
+        transform: translateY(-100%);
+    }
 }
